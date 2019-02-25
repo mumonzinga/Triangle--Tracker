@@ -2,8 +2,9 @@
   <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="js/jquery-3.3.1.js"></script>
+
     <script src="js/scripts.js"></script>
 
     <title>Triangle-Tracker</title>
@@ -11,29 +12,27 @@
   <body>
     <h1>Triangle-Tracker</h1>
     <img src="images/triangle.jpg" alt="Examples of Triangles">
-    <p>Let's find out what type of triangle it is ...</p>
+    <h2>Let's find out what type of triangle it is ...</h2>
     <div class="test-box">
       <form id="trianglemeasure">
+        <div class=form-group>
         <label for="Side1">Side1</label>
-        <input id="Side1" type="text">
+        <input id="side1" type="number">
         <label for="Side2">Side2</label>
-        <input id="Side2" type="text">
+        <input id="side2" type="number">
         <label for="Side3">Side3</label>
-        <input id="Side3" type="text">
-      </form>
-    </div>
+        <input id="side3" type="number">
+
+      </div>
       <p>Find Out what triangle it is!</p>
-      <button type="submit" class="success">
-    </class>
+      <button type="button" value="submit" onclick="trianglemeasure()">Submit</button>
+    </form>
+  </div>
+    <div id="result">
 
-    <div id="truth">
-      <p>Time of Truth </p>
-      <p><span id="real"></span></p>
+
+      <p><span id="real"></span>.</p>
     </div>
-
-    <textarea name= "length" cols="20" rows="2"></textarea>
-    <input type="submit" value=length>
-    <div class="container">
 
 
 
